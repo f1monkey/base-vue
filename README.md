@@ -17,6 +17,12 @@ $ rm -rf .git
 $ git init
 ```
 
+- permit X-forwarding
+
+```
+$ xhost local:root
+```
+
 - run electron
 
 ```bash
