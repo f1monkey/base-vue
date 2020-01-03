@@ -1,0 +1,11 @@
+version: "3.6"
+
+services:
+  node:
+    build:
+      context: ./docker/node
+    volumes:
+      - ".:/srv"
+      - "/tmp/.X11-unix:/tmp/.X11-unix"
+    env_file: .env
+    privileged: true
